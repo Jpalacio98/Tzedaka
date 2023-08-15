@@ -1,4 +1,5 @@
 import sys
+from Resource.Images.resources import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
