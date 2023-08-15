@@ -13,14 +13,16 @@ class Aplicacion(QMainWindow):
 
     def InicializarGUI(self):
         #---------------------declaracion de variables-----------------------
-        self.ui=loadUi('Resource/Views/login.ui',self)
+        self.ui=loadUi('Resource/Views/login2.ui',self)
         self.setWindowFlags(Qt.FramelessWindowHint)
+        
         pass
     
 
 def main():
     windows = QApplication(sys.argv)
     ventana= Aplicacion()
+    
     ventana.show()
 
     sys.exit(windows.exec_())

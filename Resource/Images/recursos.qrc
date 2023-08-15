@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="source">
+    <file>cerrar.png</file>
+    <file>logo.png</file>
+    <file>logoIcon.png</file>
+    <file>logoText.png</file>
+    <file>recursos.qrc</file>
+    <file>fondo1(2).jpg</file>
+    <file>fondo1.jpg</file>
+  </qresource>
+</RCC>
