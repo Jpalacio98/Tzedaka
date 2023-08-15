@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="source">
+    <file>MyIcon_white.png</file>
     <file>cerrar.png</file>
     <file>logo.png</file>
     <file>logoIcon.png</file>
