@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>822</width>
+    <width>838</width>
     <height>496</height>
    </rect>
   </property>
@@ -24,15 +24,15 @@ background-color: rgba(0, 0, 0,0);</string>
       <widget class="QFrame" name="frame">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>30</y>
-         <width>360</width>
+         <x>280</x>
+         <y>40</y>
+         <width>91</width>
          <height>400</height>
         </rect>
        </property>
        <property name="maximumSize">
         <size>
-         <width>360</width>
+         <width>362</width>
          <height>400</height>
         </size>
        </property>
@@ -89,7 +89,7 @@ font: 75 24pt &quot;Century Schoolbook&quot;;
         <property name="font">
          <font>
           <family>Century Schoolbook</family>
-          <pointsize>18</pointsize>
+          <pointsize>12</pointsize>
           <weight>9</weight>
           <italic>false</italic>
           <bold>false</bold>
@@ -101,40 +101,10 @@ border: none;
 border-bottom: 2px solid rgba(255, 255, 255, 200);
 color: #ffffff;
 padding-bottom:7px;
-font: 75 18pt &quot;Century Schoolbook&quot;;</string>
+font: 75 12pt &quot;Century Schoolbook&quot;;</string>
         </property>
         <property name="placeholderText">
          <string>Usuario</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="password">
-        <property name="geometry">
-         <rect>
-          <x>60</x>
-          <y>190</y>
-          <width>201</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Century Schoolbook</family>
-          <pointsize>18</pointsize>
-          <weight>9</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color:rgba(0,0,0,0);
-border: none;
-border-bottom: 2px solid rgba(255, 255, 255, 200);
-color: #ffffff;
-padding-bottom:7px;
-font: 75 18pt &quot;Century Schoolbook&quot;;</string>
-        </property>
-        <property name="placeholderText">
-         <string>Contraseña</string>
         </property>
        </widget>
        <widget class="QPushButton" name="ingresar">
@@ -282,6 +252,113 @@ color: white;
            </property>
            <property name="default">
             <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="btn_size">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>180</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>41</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/source/flechaL.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QWidget" name="">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>190</y>
+          <width>201</width>
+          <height>43</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLineEdit" name="password">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>41</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Century Schoolbook</family>
+             <pointsize>11</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(255, 255, 255, 200);
+color: #ffffff;
+padding-bottom:7px;
+font: 75 11pt &quot;Century Schoolbook&quot;;</string>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+           <property name="placeholderText">
+            <string>Contraseña</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_pass">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>41</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(255, 255, 255, 200);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../Images/recursos.qrc">
+             <normaloff>:/source/show.png</normaloff>:/source/show.png</iconset>
            </property>
           </widget>
          </item>

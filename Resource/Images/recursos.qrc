@@ -1,5 +1,20 @@
 <RCC>
   <qresource prefix="source">
+    <file>hide.png</file>
+    <file>show.png</file>
+    <file>ajustamiento.png</file>
+    <file>finanzas.png</file>
+    <file>proceso.png</file>
+    <file>widget.png</file>
+    <file>cliente.png</file>
+    <file>proceso.png</file>
+    <file>maximizar.png</file>
+    <file>restaurar.png</file>
+    <file>cheuron.png</file>
+    <file>minimizar.png</file>
+    <file>usuarios.png</file>
+    <file>flechaL.png</file>
+    <file>flechaR.png</file>
     <file>MyIcon_white.png</file>
     <file>cerrar.png</file>
     <file>logo.png</file>

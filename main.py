@@ -1,6 +1,6 @@
 import sys
+from Resource.Views import configLogin2, configHome
 from Resource.Images.resource import *
-from datetime import datetime
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -15,26 +15,27 @@ class Aplicacion(QMainWindow):
 
     def InicializarGUI(self):
         #---------------------declaracion de variables-----------------------
-        self.ui=loadUi('Resource/Views/login2.ui',self)
-        self.setWindowFlags(Qt.FramelessWindowHint)
-        self.setAttribute(Qt.WA_TranslucentBackground)
-        self.frame.mouseMoveEvent = self.moveWindow
-        self.btn_salir.clicked.connect(self.exit)
-        self.obtenerFecha()
-        timer = QTimer(self)
-        timer.timeout.connect(self.mostrar_reloj)
-        timer.start(1000)
+        #configLogin2.loginConfig(self)
+        configHome.homeConfig(self)
+       
 
-    def mostrar_reloj(self):
-        current_time = QTime.currentTime()
-        hour = current_time.toString("hh:mm:ss AP")
-        self.hora.setText(hour)
 
-    def obtenerFecha(self):
-        current_date = QDate.currentDate()
-        formatted_date = current_date.toString("d 'de' MMMM 'de' yyyy")
-        self.fecha.setText(formatted_date)
-
+    def close(self):
+        sys.exit()
+    
+    def minimizar(self):
+        self.showMinimized()
+        
+    def restablecer(self):
+        if self.estado:
+            self.showNormal()
+            self.btn_minmax.setStyleSheet("border-image: url(:/source/maximizar.png);")
+            self.estado=False
+        else:
+            self.btn_minmax.setStyleSheet("border-image: url(:/source/restaurar.png);")
+            self.estado = True
+            self.showMaximized()
+ 
     def moveWindow(self, e):
         if e.buttons() == Qt.LeftButton:
             self.move(self.pos() + e.globalPos() - self.clickPosition)
@@ -43,9 +44,6 @@ class Aplicacion(QMainWindow):
 
     def mousePressEvent(self, event):
         self.clickPosition = event.globalPos()
-
-    def exit(self):
-        sys.exit()
 
 
 def main():
