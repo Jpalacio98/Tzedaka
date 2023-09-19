@@ -1,0 +1,5 @@
+1) vista de clientes
+2) registro de clientes
+3) vista de procesos
+4) registro de procesos
+5) actualizacion de procesos

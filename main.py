@@ -1,5 +1,5 @@
 import sys
-from Resource.Views import configLogin2, configHome
+from Resource.Views import configLogin2, configHome, configWork
 from Resource.Images.resource import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
@@ -16,7 +16,8 @@ class Aplicacion(QMainWindow):
     def InicializarGUI(self):
         #---------------------declaracion de variables-----------------------
         #configLogin2.loginConfig(self)
-        configHome.homeConfig(self)
+        #configHome.homeConfig(self)
+        configWork.workConfig(self)
        
 
 

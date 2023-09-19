@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="source">
+    <file>lupa.png</file>
+    <file>fondo4.jpg</file>
+    <file>fondo.jpg</file>
     <file>hide.png</file>
     <file>show.png</file>
     <file>ajustamiento.png</file>
