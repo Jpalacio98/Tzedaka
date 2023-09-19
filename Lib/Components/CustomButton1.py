@@ -1,5 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class CustomButton(QtWidgets.QPushButton):
     def __init__(self, etiqueta,icono):
         super().__init__()
