@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1278</width>
-    <height>900</height>
+    <width>1037</width>
+    <height>739</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -210,96 +210,110 @@ border:none;</string>
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+             </property>
              <property name="widgetResizable">
               <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
              <widget class="QWidget" name="scrollAreaWidgetContents">
               <property name="geometry">
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>976</width>
-                <height>842</height>
+                <width>789</width>
+                <height>681</height>
                </rect>
               </property>
-              <widget class="QFrame" name="frame_3">
-               <property name="geometry">
-                <rect>
-                 <x>0</x>
-                 <y>40</y>
-                 <width>651</width>
-                 <height>421</height>
-                </rect>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: rgba(255, 255, 255, 90);</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::Box</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Sunken</enum>
-               </property>
-               <property name="lineWidth">
-                <number>1</number>
-               </property>
-               <property name="midLineWidth">
-                <number>1</number>
-               </property>
-               <layout class="QHBoxLayout" name="horizontalLayout_4">
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_3">
-                  <property name="spacing">
-                   <number>20</number>
-                  </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QFrame" name="frame_2">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="7,1">
                   <item>
-                   <layout class="QHBoxLayout" name="horizontalLayout_3">
-                    <item>
-                     <widget class="QLabel" name="label_buscar_clientes">
-                      <property name="font">
-                       <font>
-                        <pointsize>15</pointsize>
-                       </font>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">color: rgb(255, 255, 255);
+                   <widget class="QFrame" name="frame_3">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(255, 255, 255, 90);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::Box</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Sunken</enum>
+                    </property>
+                    <property name="lineWidth">
+                     <number>1</number>
+                    </property>
+                    <property name="midLineWidth">
+                     <number>1</number>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_4">
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_3">
+                       <property name="spacing">
+                        <number>20</number>
+                       </property>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_3">
+                         <property name="leftMargin">
+                          <number>9</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="label_buscar_clientes">
+                           <property name="font">
+                            <font>
+                             <family>Century Schoolbook</family>
+                             <pointsize>15</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);</string>
-                      </property>
-                      <property name="text">
-                       <string>Cedula:</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLineEdit" name="lE_buscar_clientes">
-                      <property name="font">
-                       <font>
-                        <pointsize>10</pointsize>
-                       </font>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">border:none;
+                           </property>
+                           <property name="text">
+                            <string>Cedula:</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="lE_buscar_clientes">
+                           <property name="font">
+                            <font>
+                             <family>Century Schoolbook</family>
+                             <pointsize>10</pointsize>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border:none;
 border-bottom:1px solid #fff;
 background-color: rgba(255, 255, 255, 0);</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QPushButton" name="btn_buscar_clientes">
-                      <property name="minimumSize">
-                       <size>
-                        <width>24</width>
-                        <height>24</height>
-                       </size>
-                      </property>
-                      <property name="maximumSize">
-                       <size>
-                        <width>24</width>
-                        <height>24</height>
-                       </size>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">QPushButton{
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="btn_buscar_clientes">
+                           <property name="minimumSize">
+                            <size>
+                             <width>24</width>
+                             <height>24</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>24</width>
+                             <height>24</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QPushButton{
   background-color: rgba(255, 255, 255, 0);
   border:none;
 }
@@ -307,76 +321,135 @@ QPushButton:hover{
  border-bottom: 2px solid #ffffff;
  border-radius: 12;
 }</string>
-                      </property>
-                      <property name="text">
-                       <string/>
-                      </property>
-                      <property name="icon">
-                       <iconset resource="../Images/recursos.qrc">
-                        <normaloff>:/source/lupa.png</normaloff>:/source/lupa.png</iconset>
-                      </property>
-                      <property name="iconSize">
-                       <size>
-                        <width>15</width>
-                        <height>15</height>
-                       </size>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <spacer name="horizontalSpacer_2">
-                      <property name="orientation">
-                       <enum>Qt::Horizontal</enum>
-                      </property>
-                      <property name="sizeType">
-                       <enum>QSizePolicy::Expanding</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                       <size>
-                        <width>200</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                     </spacer>
-                    </item>
-                   </layout>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset resource="../Images/recursos.qrc">
+                             <normaloff>:/source/lupa.png</normaloff>:/source/lupa.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>15</width>
+                             <height>15</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <spacer name="horizontalSpacer_2">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeType">
+                            <enum>QSizePolicy::Expanding</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>200</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QListWidget" name="tw_clientes">
+                         <property name="styleSheet">
+                          <string notr="true">QListWidget{
+	background-color: rgba(255, 255, 255,0);
+}
+
+QListWidget::item:hover {
+	background-color: #fff;
+}
+QListWidget::item:selected {
+	background-color: rgba(0,255,0,80);
+}</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
                   </item>
                   <item>
-                   <widget class="QListWidget" name="tw_clientes">
-                    <property name="styleSheet">
-                     <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+                   <widget class="QFrame" name="frame_list_btn_clientes">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>81</height>
+                     </size>
                     </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(255, 255, 255, 90);</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,1,1,0">
+                     <property name="spacing">
+                      <number>100</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>10</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>50</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>10</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>10</number>
+                     </property>
+                     <item>
+                      <widget class="QPushButton" name="pushButton">
+                       <property name="text">
+                        <string>PushButton</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButton_2">
+                       <property name="text">
+                        <string>PushButton</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButton_3">
+                       <property name="text">
+                        <string>PushButton</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="verticalSpacer">
+                       <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>261</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
                    </widget>
                   </item>
                  </layout>
-                </item>
-               </layout>
-              </widget>
-              <widget class="QFrame" name="frame_list_btn_clientes">
-               <property name="geometry">
-                <rect>
-                 <x>710</x>
-                 <y>80</y>
-                 <width>172</width>
-                 <height>243</height>
-                </rect>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>100</width>
-                 <height>81</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: rgba(88, 88, 88,200);</string>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-              </widget>
+                </widget>
+               </item>
+              </layout>
              </widget>
             </widget>
            </item>
@@ -397,457 +470,11 @@ QPushButton:hover{
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>559</width>
-                <height>559</height>
+                <width>395</width>
+                <height>840</height>
                </rect>
               </property>
-              <layout class="QHBoxLayout" name="horizontalLayout_6">
-               <item>
-                <widget class="QWidget" name="widget" native="true">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>541</width>
-                   <height>541</height>
-                  </size>
-                 </property>
-                 <widget class="QFrame" name="frame_2">
-                  <property name="geometry">
-                   <rect>
-                    <x>70</x>
-                    <y>10</y>
-                    <width>721</width>
-                    <height>251</height>
-                   </rect>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-color: rgb(129, 129, 129);
-border-radius:20px;</string>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <widget class="QLabel" name="label_5">
-                   <property name="geometry">
-                    <rect>
-                     <x>510</x>
-                     <y>40</y>
-                     <width>121</width>
-                     <height>121</height>
-                    </rect>
-                   </property>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="pixmap">
-                    <pixmap resource="../Images/recursos.qrc">:/source/usuarios.png</pixmap>
-                   </property>
-                   <property name="scaledContents">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                  <widget class="QWidget" name="layoutWidget">
-                   <property name="geometry">
-                    <rect>
-                     <x>140</x>
-                     <y>40</y>
-                     <width>271</width>
-                     <height>108</height>
-                    </rect>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_8">
-                    <property name="spacing">
-                     <number>0</number>
-                    </property>
-                    <item>
-                     <widget class="QLabel" name="label">
-                      <property name="font">
-                       <font>
-                        <pointsize>30</pointsize>
-                       </font>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgb(255, 255, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>DATOS DEL</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="QLabel" name="label_3">
-                      <property name="font">
-                       <font>
-                        <pointsize>30</pointsize>
-                       </font>
-                      </property>
-                      <property name="styleSheet">
-                       <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgb(255, 255, 255);</string>
-                      </property>
-                      <property name="text">
-                       <string>CLIENTE</string>
-                      </property>
-                      <property name="alignment">
-                       <set>Qt::AlignCenter</set>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </widget>
-                 <widget class="QFrame" name="frame_5">
-                  <property name="geometry">
-                   <rect>
-                    <x>70</x>
-                    <y>220</y>
-                    <width>721</width>
-                    <height>571</height>
-                   </rect>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-color: rgb(255, 255, 255);
-border-radius:30px;</string>
-                  </property>
-                  <property name="frameShape">
-                   <enum>QFrame::StyledPanel</enum>
-                  </property>
-                  <property name="frameShadow">
-                   <enum>QFrame::Raised</enum>
-                  </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_9" stretch="7,2">
-                   <property name="spacing">
-                    <number>50</number>
-                   </property>
-                   <property name="leftMargin">
-                    <number>50</number>
-                   </property>
-                   <property name="topMargin">
-                    <number>50</number>
-                   </property>
-                   <property name="rightMargin">
-                    <number>50</number>
-                   </property>
-                   <property name="bottomMargin">
-                    <number>50</number>
-                   </property>
-                   <item>
-                    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0" columnstretch="2,1,1">
-                     <property name="horizontalSpacing">
-                      <number>20</number>
-                     </property>
-                     <property name="verticalSpacing">
-                      <number>34</number>
-                     </property>
-                     <item row="0" column="0">
-                      <widget class="QLineEdit" name="lineEdit_20">
-                       <property name="minimumSize">
-                        <size>
-                         <width>200</width>
-                         <height>30</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(220, 220, 220);
-border:1px solid #818181;
-border-radius: 5px;</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="placeholderText">
-                        <string>Cedula o Nic</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="0" column="1" colspan="2">
-                      <widget class="QLineEdit" name="lineEdit_25">
-                       <property name="minimumSize">
-                        <size>
-                         <width>200</width>
-                         <height>30</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(220, 220, 220);
-border:1px solid #818181;
-border-radius: 5px;</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="placeholderText">
-                        <string>Fecha de Nacimineto</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="QLineEdit" name="lineEdit_27">
-                       <property name="minimumSize">
-                        <size>
-                         <width>200</width>
-                         <height>30</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(220, 220, 220);
-border:1px solid #818181;
-border-radius: 5px;</string>
-                       </property>
-                       <property name="placeholderText">
-                        <string>Nombres</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="1" colspan="2">
-                      <widget class="QLineEdit" name="lineEdit_24">
-                       <property name="minimumSize">
-                        <size>
-                         <width>200</width>
-                         <height>30</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(220, 220, 220);
-border:1px solid #818181;
-border-radius: 5px;</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="placeholderText">
-                        <string>Apellidos</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="2" column="0">
-                      <widget class="QLineEdit" name="lineEdit_28">
-                       <property name="minimumSize">
-                        <size>
-                         <width>200</width>
-                         <height>30</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(220, 220, 220);
-border:1px solid #818181;
-border-radius: 5px;</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="placeholderText">
-                        <string>Telefono</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="2" column="1" colspan="2">
-                      <widget class="QLineEdit" name="lineEdit_23">
-                       <property name="minimumSize">
-                        <size>
-                         <width>200</width>
-                         <height>30</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(220, 220, 220);
-border:1px solid #818181;
-border-radius: 5px;</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="placeholderText">
-                        <string>Direccion</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="3" column="0">
-                      <widget class="QLineEdit" name="lineEdit_22">
-                       <property name="minimumSize">
-                        <size>
-                         <width>200</width>
-                         <height>30</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(220, 220, 220);
-border:1px solid #818181;
-border-radius: 5px;</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="placeholderText">
-                        <string>Email</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="3" column="1">
-                      <widget class="QLineEdit" name="lineEdit_26">
-                       <property name="minimumSize">
-                        <size>
-                         <width>95</width>
-                         <height>30</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(220, 220, 220);
-border:1px solid #818181;
-border-radius: 5px;</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="placeholderText">
-                        <string>Barrio</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="3" column="2">
-                      <widget class="QLineEdit" name="lineEdit_21">
-                       <property name="minimumSize">
-                        <size>
-                         <width>95</width>
-                         <height>30</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>10</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(220, 220, 220);
-border:1px solid #818181;
-border-radius: 5px;</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="placeholderText">
-                        <string>Ciudad</string>
-                       </property>
-                      </widget>
-                     </item>
-                    </layout>
-                   </item>
-                   <item>
-                    <layout class="QHBoxLayout" name="horizontalLayout_7">
-                     <item>
-                      <spacer name="horizontalSpacer_3">
-                       <property name="orientation">
-                        <enum>Qt::Horizontal</enum>
-                       </property>
-                       <property name="sizeHint" stdset="0">
-                        <size>
-                         <width>40</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                      </spacer>
-                     </item>
-                     <item>
-                      <widget class="QPushButton" name="pushButton_4">
-                       <property name="minimumSize">
-                        <size>
-                         <width>150</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>150</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <pointsize>12</pointsize>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">background-color: rgb(135, 135, 135);
-color: rgb(255, 255, 255);
-border-radius:25px;</string>
-                       </property>
-                       <property name="text">
-                        <string>Guardar</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <spacer name="horizontalSpacer_6">
-                       <property name="orientation">
-                        <enum>Qt::Horizontal</enum>
-                       </property>
-                       <property name="sizeHint" stdset="0">
-                        <size>
-                         <width>40</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                      </spacer>
-                     </item>
-                    </layout>
-                   </item>
-                  </layout>
-                 </widget>
-                </widget>
-               </item>
-              </layout>
+              <layout class="QHBoxLayout" name="horizontalLayout_6"/>
              </widget>
             </widget>
            </item>

@@ -1,13 +1,23 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_Frame(object):
     def setupUi(self, Frame):
         Frame.setObjectName("Frame")
-        Frame.resize(549, 68)
-        Frame.setStyleSheet("background-color: rgb(0, 0, 0);")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(Frame)
+        Frame.resize(636, 138)
+        Frame.setStyleSheet("background-color: rgba(0, 0, 0,0);")
+        self.frame_2 = QtWidgets.QFrame(Frame)
+        self.frame_2.setGeometry(QtCore.QRect(70, 20, 548, 70))
+        self.frame_2.setStyleSheet("QFrame{\n"
+"background-color: rgb(0, 0, 0);\n"
+"border-radius:10px;\n"
+"}")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.frame_2)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.frame = QtWidgets.QFrame(Frame)
+        self.frame = QtWidgets.QFrame(self.frame_2)
         self.frame.setMinimumSize(QtCore.QSize(50, 50))
         self.frame.setMaximumSize(QtCore.QSize(50, 50))
         self.frame.setStyleSheet("background-color: rgb(100, 100, 100);\n"
@@ -19,14 +29,15 @@ class Ui_Frame(object):
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.label = QtWidgets.QLabel(Frame)
+        self.label = QtWidgets.QLabel(self.frame_2)
         font = QtGui.QFont()
         font.setPointSize(12)
         self.label.setFont(font)
         self.label.setStyleSheet("color: rgb(255, 255, 255);")
         self.label.setObjectName("label")
         self.verticalLayout.addWidget(self.label)
-        self.label_2 = QtWidgets.QLabel(Frame)
+        self.verticalLayout.replaceWidget()
+        self.label_2 = QtWidgets.QLabel(self.frame_2)
         font = QtGui.QFont()
         font.setPointSize(10)
         self.label_2.setFont(font)
@@ -39,14 +50,14 @@ class Ui_Frame(object):
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.label_3 = QtWidgets.QLabel(Frame)
+        self.label_3 = QtWidgets.QLabel(self.frame_2)
         font = QtGui.QFont()
         font.setPointSize(8)
         self.label_3.setFont(font)
         self.label_3.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_3.setObjectName("label_3")
         self.verticalLayout_2.addWidget(self.label_3)
-        self.label_4 = QtWidgets.QLabel(Frame)
+        self.label_4 = QtWidgets.QLabel(self.frame_2)
         font = QtGui.QFont()
         font.setPointSize(8)
         self.label_4.setFont(font)

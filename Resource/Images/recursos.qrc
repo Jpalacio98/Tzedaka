@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="source">
+    <file>anadir_cliente.png</file>
+    <file>editar_cliente.png</file>
+    <file>eliminar_cliente.png</file>
     <file>lupa.png</file>
     <file>fondo4.jpg</file>
     <file>fondo.jpg</file>
