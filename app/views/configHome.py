@@ -8,7 +8,7 @@ from PyQt5.uic import loadUi
 
 
 def homeConfig(self):
-    self.estado = True
+    self.estado = False
     self.ui=loadUi('app/views/home.ui',self)
     self.setWindowFlags(Qt.FramelessWindowHint)
 
@@ -44,7 +44,7 @@ def homeConfig(self):
     self.timer = QTimer()
     self.timer.timeout.connect(lambda:reloj(self))
     self.timer.start(1000)
-    self.show()
+    self.showMaximized()
 
 def reloj(self):
     self.hora.setText(get_hours())

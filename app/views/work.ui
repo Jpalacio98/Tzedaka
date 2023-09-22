@@ -326,7 +326,7 @@ QPushButton:hover{
                             <string/>
                            </property>
                            <property name="icon">
-                            <iconset resource="../Images/recursos.qrc">
+                            <iconset resource="../../static/recursos.qrc">
                              <normaloff>:/source/lupa.png</normaloff>:/source/lupa.png</iconset>
                            </property>
                            <property name="iconSize">
@@ -492,7 +492,7 @@ QListWidget::item:selected {
   </widget>
  </widget>
  <resources>
-  <include location="../Images/recursos.qrc"/>
+  <include location="../../static/recursos.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -372,6 +372,12 @@ QPushButton:pressed {
         <property name="text">
          <string>Guardar</string>
         </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -451,7 +457,7 @@ QPushButton:pressed {
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../Images/recursos.qrc">:/source/usuarios.png</pixmap>
+     <pixmap resource="../../static/recursos.qrc">:/source/usuarios.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -499,8 +505,7 @@ color: rgb(255, 255, 255);</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">
-</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>CLIENTE</string>
@@ -540,7 +545,7 @@ color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="icon">
-     <iconset resource="../Images/recursos.qrc">
+     <iconset resource="../../static/recursos.qrc">
       <normaloff>:/source/cerrar.png</normaloff>:/source/cerrar.png</iconset>
     </property>
     <property name="iconSize">
@@ -558,7 +563,8 @@ color: rgb(255, 255, 255);</string>
   <zorder>frame_5</zorder>
  </widget>
  <resources>
-  <include location="../Images/recursos.qrc"/>
+  <include location="../../static/recursos.qrc"/>
+  <include location="../../static/recursos.qrc"/>
   <include location="../Images/recursos.qrc"/>
  </resources>
  <connections/>

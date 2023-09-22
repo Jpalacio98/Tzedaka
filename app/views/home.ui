@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>715</width>
-    <height>592</height>
+    <width>1080</width>
+    <height>760</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -219,7 +219,7 @@ font: 75 12pt &quot;Century Schoolbook&quot;;</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <property name="spacing">
-        <number>10</number>
+        <number>0</number>
        </property>
        <item>
         <spacer name="verticalSpacer_2">
@@ -256,16 +256,22 @@ font: 75 12pt &quot;Century Schoolbook&quot;;</string>
            </property>
            <item>
             <widget class="QLabel" name="label_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="minimumSize">
               <size>
-               <width>200</width>
+               <width>350</width>
                <height>200</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
-               <width>200</width>
-               <height>200</height>
+               <width>16777215</width>
+               <height>16777215</height>
               </size>
              </property>
              <property name="styleSheet">
@@ -278,22 +284,28 @@ background-color: rgba(255, 255, 255, 0);</string>
             </widget>
            </item>
            <item>
-            <layout class="QVBoxLayout" name="verticalLayout_2" stretch="3,1,2">
+            <layout class="QVBoxLayout" name="verticalLayout_2" stretch="3,1,0,0">
              <property name="spacing">
               <number>0</number>
              </property>
              <item>
               <widget class="QLabel" name="label_4">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="minimumSize">
                 <size>
-                 <width>360</width>
-                 <height>90</height>
+                 <width>600</width>
+                 <height>200</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>360</width>
-                 <height>90</height>
+                 <width>16777215</width>
+                 <height>16777215</height>
                 </size>
                </property>
                <property name="styleSheet">
@@ -307,13 +319,31 @@ border-image: url(:/source/logoText.png);</string>
              </item>
              <item>
               <widget class="QLabel" name="hora">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Century Schoolbook</family>
+                 <pointsize>60</pointsize>
+                 <weight>9</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
                <property name="styleSheet">
                 <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);
-font: 75 40pt &quot;Century Schoolbook&quot;;</string>
+</string>
                </property>
                <property name="text">
                 <string>00:00:00</string>
+               </property>
+               <property name="scaledContents">
+                <bool>false</bool>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -321,11 +351,36 @@ font: 75 40pt &quot;Century Schoolbook&quot;;</string>
               </widget>
              </item>
              <item>
+              <spacer name="verticalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
               <widget class="QLabel" name="fecha">
+               <property name="font">
+                <font>
+                 <family>Century Schoolbook</family>
+                 <pointsize>26</pointsize>
+                 <weight>9</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                </font>
+               </property>
                <property name="styleSheet">
                 <string notr="true">color: rgb(255, 255, 255);
 background-color: rgba(255, 255, 255, 0);
-font: 75 14pt &quot;Century Schoolbook&quot;;</string>
+</string>
                </property>
                <property name="text">
                 <string>Miercole, 14 de diciembre del 2004</string>
@@ -360,7 +415,7 @@ font: 75 14pt &quot;Century Schoolbook&quot;;</string>
           <enum>Qt::Vertical</enum>
          </property>
          <property name="sizeType">
-          <enum>QSizePolicy::MinimumExpanding</enum>
+          <enum>QSizePolicy::Preferred</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
@@ -375,7 +430,7 @@ font: 75 14pt &quot;Century Schoolbook&quot;;</string>
          <property name="minimumSize">
           <size>
            <width>0</width>
-           <height>200</height>
+           <height>300</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -560,10 +615,13 @@ font: 75 14pt &quot;Century Schoolbook&quot;;</string>
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>56</height>
+           <height>200</height>
           </size>
          </property>
         </spacer>
@@ -575,7 +633,7 @@ font: 75 14pt &quot;Century Schoolbook&quot;;</string>
   </widget>
  </widget>
  <resources>
-  <include location="../Images/recursos.qrc"/>
+  <include location="../../static/recursos.qrc"/>
  </resources>
  <connections/>
 </ui>

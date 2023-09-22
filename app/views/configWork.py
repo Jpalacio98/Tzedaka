@@ -23,7 +23,7 @@ def workConfig(self):
     self.horizontalLayout.replaceWidget(self.sidebar,self.frameSidebar)
     self.sidebar.close()
     #self.sidebar= 
-    self.estado = True
+    self.estado = False
     self.setWindowFlags(Qt.FramelessWindowHint)
     self.btn_cerrar.clicked.connect(self.close)
     self.btn_minmax.clicked.connect(self.restablecer)
@@ -53,7 +53,7 @@ def workConfig(self):
     cargarClientes(self)
     self.btn_Registar.clicked.connect(lambda:registroForm(self))
 
-    self.show()
+    self.showMaximized()
 
 def FuncionMenuBtn(self):
     print("se preciono un boton del menu")
