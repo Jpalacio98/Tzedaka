@@ -1,6 +1,6 @@
 import sys
-from Resource.Views import configLogin2, configHome, configWork
-from Resource.Images.resource import *
+from app.views import configLogin2, configHome, configWork
+from static.resource import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *

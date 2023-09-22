@@ -1,6 +1,6 @@
-from Resource.Images.resource import *
-from Lib.Components.CustomButton1 import CustomButton as Cbutton1
-from Lib.Components.reloj import get_date, get_hours
+from static.resource import * 
+from app.components.CustomButton1 import CustomButton as Cbutton1
+from app.components.reloj import get_date, get_hours
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -9,7 +9,7 @@ from PyQt5.uic import loadUi
 
 def homeConfig(self):
     self.estado = True
-    self.ui=loadUi('Resource/Views/home.ui',self)
+    self.ui=loadUi('app/views/home.ui',self)
     self.setWindowFlags(Qt.FramelessWindowHint)
 
     #-----boton 1---------

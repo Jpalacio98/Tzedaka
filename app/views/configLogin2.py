@@ -5,7 +5,7 @@ from PyQt5.QtGui import *
 from PyQt5.uic import loadUi
 
 def loginConfig(self):
-    self.ui=loadUi('Resource/Views/login2.ui',self)
+    self.ui=loadUi('app/views/login2.ui',self)
     self.setWindowFlags(Qt.FramelessWindowHint)
     self.setAttribute(Qt.WA_TranslucentBackground)
     self.frame.mouseMoveEvent = self.moveWindow

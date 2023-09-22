@@ -1,15 +1,15 @@
 
 import sys
-from Lib.Components.listItem import Ui_Frame
-from Resource.Views import configRegistraClienteForm
-from Lib.Components.CustomButton2 import CustomButton as Cbutton1
+from app.components.listItem import Ui_Frame
+from app.views import configRegistraClienteForm
+from app.components.CustomButton2 import CustomButton as Cbutton1
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.uic import loadUi
 
 def workConfig(self):
-    self.ui=loadUi("Resource/Views/work.ui",self)
+    self.ui=loadUi("app/views/work.ui",self)
     self.estado = True
     self.setWindowFlags(Qt.FramelessWindowHint)
     self.btn_cerrar.clicked.connect(self.close)
@@ -45,7 +45,7 @@ def workConfig(self):
 def clienteForm(self):
     #en esta funcuon debe ir la informacion del cliente pasada por parametros
     Frame = QFrame(self)
-    ui = loadUi("Resource/Views/frameDatos.ui",Frame)
+    ui = loadUi("app/views/frameDatos.ui",Frame)
     return Frame
 
 def cargarClientes(self):
