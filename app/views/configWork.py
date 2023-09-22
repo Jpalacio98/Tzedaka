@@ -1,8 +1,10 @@
 
 import sys
+
 from app.components.listItem import Ui_Frame
 from app.views import configRegistraClienteForm
 from app.components.CustomButton2 import CustomButton as Cbutton1
+from app.components.SideBar import Sidebar
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
@@ -10,6 +12,17 @@ from PyQt5.uic import loadUi
 
 def workConfig(self):
     self.ui=loadUi("app/views/work.ui",self)
+    datos=[
+            ("Clientes", ":source/cliente.png",lambda:FuncionMenuBtn(self)),
+            ("Procesos", ":source/proceso.png",lambda:FuncionMenuBtn(self)),
+            ("Calculos", ":source/widget.png",lambda:FuncionMenuBtn(self)),
+            ("Finanzas",":source/finanzas.png",lambda:FuncionMenuBtn(self)),
+            ("Ajustes", ":source/ajustamiento.png",lambda:FuncionMenuBtn(self))
+        ]
+    self.frameSidebar = Sidebar(datos)
+    self.horizontalLayout.replaceWidget(self.sidebar,self.frameSidebar)
+    self.sidebar.close()
+    #self.sidebar= 
     self.estado = True
     self.setWindowFlags(Qt.FramelessWindowHint)
     self.btn_cerrar.clicked.connect(self.close)
@@ -40,7 +53,10 @@ def workConfig(self):
     cargarClientes(self)
     self.btn_Registar.clicked.connect(lambda:registroForm(self))
 
-    self.showMaximized()
+    self.show()
+
+def FuncionMenuBtn(self):
+    print("se preciono un boton del menu")
 
 def clienteForm(self):
     #en esta funcuon debe ir la informacion del cliente pasada por parametros

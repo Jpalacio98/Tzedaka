@@ -1,4 +1,4 @@
-from static.resource import * 
+from static.resource import *
 from app.components.CustomButton1 import CustomButton as Cbutton1
 from app.components.reloj import get_date, get_hours
 from PyQt5.QtWidgets import *
@@ -41,10 +41,10 @@ def homeConfig(self):
     self.btn_minmax.clicked.connect(self.restablecer)
     self.btn_minimizar.clicked.connect(self.minimizar)
     self.btn_Clientes_1.clicked.connect(self.close)
-    self.timer = QtCore.QTimer()
+    self.timer = QTimer()
     self.timer.timeout.connect(lambda:reloj(self))
     self.timer.start(1000)
-    self.showMaximized()
+    self.show()
 
 def reloj(self):
     self.hora.setText(get_hours())

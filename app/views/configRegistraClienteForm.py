@@ -9,7 +9,7 @@ from PyQt5.uic import loadUi
 class registrarClienteFormConfig(QDialog):
     def __init__(self):
         super().__init__()
-        self.ui = loadUi('app/views/registrarClienteForm.ui',self)
+        self.ui = loadUi('app/views/registrarClienteForm2.ui',self)
         self.setWindowFlag(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.btn_cerrar_2.clicked.connect(self.close)
