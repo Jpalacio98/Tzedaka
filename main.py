@@ -15,8 +15,8 @@ class Aplicacion(QMainWindow):
     def InicializarGUI(self):
         #---------------------declaracion de variables-----------------------
         #configLogin2.loginConfig(self)
-        configHome.homeConfig(self)
-        #configWork.workConfig(self)
+        #configHome.homeConfig(self)
+        configWork.workConfig(self)
        
 
 
