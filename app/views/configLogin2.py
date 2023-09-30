@@ -55,5 +55,5 @@ def iniciarsesion(self):
     print("Iniciar sesion")
     user=self.user.text
     password=self.password.text
-    ControlUserAuth.ingresar_usuario(user,password)
+    #ControlUserAuth.ingresar_usuario(user,password)
     
