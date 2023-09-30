@@ -241,7 +241,7 @@ border:none;</string>
                   <item>
                    <widget class="QFrame" name="frame_3">
                     <property name="styleSheet">
-                     <string notr="true">background-color: rgba(255, 255, 255, 90);</string>
+                     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
                     </property>
                     <property name="frameShape">
                      <enum>QFrame::Box</enum>
@@ -385,7 +385,7 @@ QListWidget::item:selected {
                      </size>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">background-color: rgba(255, 255, 255, 90);</string>
+                     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
                     </property>
                     <property name="frameShape">
                      <enum>QFrame::StyledPanel</enum>

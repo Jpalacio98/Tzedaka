@@ -24,24 +24,23 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QFrame {
-	background-color: rgb(129, 129, 129);
+	background-color: rgb(0, 0, 0);
 	border-radius:25px;
 	border: 3px ridge #fff; 
 	border-top:1px ridge #fff;
 }
 
-
 QLineEdit {
-background-color: #FFF;
-border:1px solid #000;
-border-radius: 5px;
+	background-color: #FFF;
+	border:1px solid #000;
+	border-radius: 5px;
 }
 
 QPushButton {
-	background-color:#000;
+	
 	color: #FFF;
 	border-radius:15px;
-	border: 0px outset #595959;
+	border: 3px outset #595959;
 	
 }
 
@@ -408,7 +407,7 @@ QPushButton:pressed {
    </property>
    <property name="styleSheet">
     <string notr="true">QFrame {
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(129, 129, 129);
 	border-radius:25px;
 	border: 3px ridge #fff; 
 
@@ -421,21 +420,21 @@ border:none;
 }
 
 QPushButton {
-	background-color:#000;
+	background-color:#818181;
 	border:none;
 	
 }
 
 QPushButton:hover {
 	border-radius:13px;
-	border: 2px outset #595959;
+	border: 2px outset #fff;
 }
 
 QPushButton:pressed {
-	background-color:#777;
+	background-color:#000;
 
 	border-radius:13px;
-	border: 2px inset #595959;
+	border: 2px inset #fff;
 }</string>
    </property>
    <property name="frameShape">
@@ -447,8 +446,8 @@ QPushButton:pressed {
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>30</y>
+      <x>460</x>
+      <y>20</y>
       <width>121</width>
       <height>121</height>
      </rect>
@@ -565,7 +564,7 @@ color: rgb(255, 255, 255);</string>
  <resources>
   <include location="../../static/recursos.qrc"/>
   <include location="../../static/recursos.qrc"/>
-  <include location="../Images/recursos.qrc"/>
+  <include location="../../static/recursos.qrc"/>
  </resources>
  <connections/>
 </ui>
