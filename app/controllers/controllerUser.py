@@ -1,11 +1,11 @@
-from data.services import serviceUser as service
+#from data.services import serviceUser as service
 
 class ControlUserAuth:
     def __init__(self):
         self.response = None
         self.message = ""
         self.user_credential = None
-        self.service = service.Peticioneslogin()
+        #self.service = service.Peticioneslogin()
 
     async def crear_usuario(self, email, password):
         # Llama a la función de registro de usuario y maneja la respuesta
@@ -19,6 +19,7 @@ class ControlUserAuth:
 
     async def ingresar_usuario(self, email, password):
         # Llama a la función para ingresar usuario y maneja la respuesta
+        print("estoy en el contoladore")
         self.response = await self.ingresar_usuario_en_servicio(email, password)
         print(self.response);
         await self.controlar_usuario(self.response)
