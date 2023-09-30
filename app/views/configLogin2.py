@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.uic import loadUi
+from app.controllers.controllerUser import ControlUserAuth
 
 def loginConfig(self):
     self.ui=loadUi('app/views/login2.ui',self)
@@ -11,6 +12,7 @@ def loginConfig(self):
     self.frame.mouseMoveEvent = self.moveWindow
     self.btn_salir.clicked.connect(self.close)
     self.btn_size.clicked.connect(lambda: change_size(self))
+    self.ingresar.clicked.connect(lambda: iniciarsesion(self))
     self.btn_pass.clicked.connect(lambda:hidenpass(self) )
     obtenerFecha(self)
     timer = QTimer(self)
@@ -48,3 +50,10 @@ def hidenpass(self):
     else:
         self.password.setEchoMode(QLineEdit.Normal)
         self.btn_pass.setIcon(QIcon(":/source/hide.png"))
+
+def iniciarsesion(self):
+    print("Iniciar sesion")
+    user=self.user.text
+    password=self.password.text
+    ControlUserAuth.ingresar_usuario(user,password)
+    

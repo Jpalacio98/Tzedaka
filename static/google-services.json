@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "818074652781",
+    "firebase_url": "https://tzedaka-db-default-rtdb.firebaseio.com",
+    "project_id": "tzedaka-db",
+    "storage_bucket": "tzedaka-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818074652781:android:3228147929af1f5259af64",
+        "android_client_info": {
+          "package_name": "com.tzedaka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818074652781-700tmh5soichaektseq8acm4r2etdbii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo5pJRSREIbohC-GPJHNCrVhDm5Q_e1J4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818074652781-700tmh5soichaektseq8acm4r2etdbii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
