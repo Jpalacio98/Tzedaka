@@ -1,4 +1,5 @@
 from firebase import firebase
+import psutil
 import requests
 
 class ConnecionFB():
@@ -8,7 +9,7 @@ class ConnecionFB():
 
     def conexion(self):
         try:
-            response =  firebase.FirebaseApplication("https://tzedaka-db-default-rtdb.firebaseio.com/",None)
+            response =  firebase.FirebaseApplication("https://tzedaka-db-default-rtdb.firebaseio.com/TzedakaBD/Users/-NYqNA0M0SA7DOE2fhBz",None)
             self.db = response
             return True
         except response:
@@ -33,3 +34,12 @@ class ConnecionFB():
         res = self.db.delete(f'/TzedakaBD/{tabla}',f'{id}')
         return res
 
+    # def closeConnection(self):
+    #     for process in psutil.process_iter(attrs=['pid', 'name']):
+    #         if process.info['name'] == process_name:
+    #             try:
+    #                 p = psutil.Process(process.info['pid'])
+    #                 p.terminate()  # Terminar el proceso
+    #                 print(f"Proceso {process_name} terminado con éxito.")
+    #             except Exception as e:
+    #                 print(f"No se pudo terminar el proceso {process_name}: {str(e)}")

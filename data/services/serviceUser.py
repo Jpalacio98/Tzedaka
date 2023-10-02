@@ -1,85 +1,45 @@
+from data.Firebase.connect import ConnecionFB
+
+class UserService():
+    def __init__(self):
+        super().__init__()
+        self.cn = ConnecionFB()
+
+    def insertUser(self,user):
+        res = self.cn.insertTabla('Users',user.setfotamto())
+        return res
+    
+    def deleteUser(self,id):
+        lista = self.listUsers2()
+        for i in range(len(lista)):
+            if lista[i][1]['cedula']==id:
+                res = self.cn.deleteTabla('Users',lista[i][0])
+                return res
+        return f"No se encontri el registro {id}"
+    
+    def updateUser(self,id,newUser):
+        res1 = self.deleteUser(id)
+        res2 = self.insertUser(newUser)
+        return res1, res2
+
+    def listUsers2(self):
+        res = self.cn.consultarTabla('Users')
+        users =[]
+        for i in range(len(res)):
+            users.append((res[i][0],res[i][1]))
+        return users
+
+    def authenticateUser(self,username,password):
+        if self.cn.estado == True:
+            lista = self.listUsers2()
+            for i in range(len(lista)):
+                if lista[i][1]['username'] == username or lista[i][1]['correo'] == username:
+                    if lista[i][1]['password'] == password:
+                        return True,"Iniciando Secion",lista[i]
+                    else:
+                        return False,"Contraseña incorrerta...",None
+            return False,"Usuario No resgistado...",None
+        else:
+            return False,"No hay conexion a internet",None
 
 
-
-# class Peticioneslogin:
-#     def __init__(self):
-#         self.auth = pyrebase.auth()
-
-#         cred = {
-#             "apiKey": "AIzaSyAnE6WxkeYDZ9Oro8moJUbTDWwML2VtdyY",
-#             "authDomain": "tzedaka-db.firebaseapp.com",
-#             "databaseURL": "https://tzedaka-db-default-rtdb.firebaseio.com",
-#             "projectId": "tzedaka-db",
-#             "storageBucket": "tzedaka-db.appspot.com",
-#             "messagingSenderId": "818074652781",
-#             "appId": "1:818074652781:web:d4f7c6b994745a5a59af64",
-#             "measurementId": "G-0Y4L73XMB7",
-#         }
-
-#         self.firebase = pyrebase.initialize_app(cred)
-
-#     @staticmethod
-#     async def crear_registro_email(self, email, password):
-#         try:
-#             user = await self.auth.create_user(email=email, password=password)
-#             return user
-#         except pyrebase.auth.AuthError as e:
-#             if e.code == "weak-password":
-#                 return "Contraseña Debil"
-#             elif e.code == "email-already-exists":
-#                 return "Correo ya Existe"
-#         except Exception as e:
-#             print(e)
-
-#     @staticmethod
-#     async def consultar_usuario(self):
-#         try:
-#             user = await self.auth.get_user_by_uid(
-#                 "user_id"
-#             )  # Reemplaza 'user_id' con el ID del usuario que deseas consultar
-#             return user
-#         except self.auth.AuthError as e:
-#             if e.code == "user-not-found":
-#                 print("Usuario no encontrado")
-#             else:
-#                 print(e)
-#         except Exception as e:
-#             print(e)
-
-#     @staticmethod
-#     async def ingresar_email(self, email, password):
-#         try:
-#             user = await self.auth.sign_in_with_email_and_password(
-#                 email=email, password=password
-#             )
-#             print(user.uid)
-#             return user
-#         except self.auth.AuthError as e:
-#             if e.code == "user-not-found":
-#                 print("Correo no encontrado")
-#                 return "1"
-#             elif e.code == "wrong-password":
-#                 print("Contraseña incorrecta")
-#                 return "2"
-#             else:
-#                 print(e)
-#         except Exception as e:
-#             print(e)
-
-#     @staticmethod
-#     async def recuperar_contrasena(self, email):
-#         try:
-#             await self.auth.generate_password_reset_link(email)
-#             return "Correo Enviado"
-#         except Exception as e:
-#             print(e)
-
-#     @staticmethod
-#     async def abandonar_sesion(self):
-#         try:
-#             await self.auth.revoke_refresh_tokens(
-#                 "user_id"
-#             )  # Reemplaza 'user_id' con el ID del usuario
-#             return "Sesión Cerrada"
-#         except Exception as e:
-#             print(e)

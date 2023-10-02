@@ -2,7 +2,7 @@
 import sys
 
 from app.components.listItem import Ui_Frame
-from app.views import configRegistraClienteForm
+from app.views import configRegistraClienteForm, configInfoCliente
 from app.components.CustomButton2 import CustomButton as Cbutton1
 from app.components.SideBar import Sidebar
 from PyQt5.QtWidgets import *
@@ -62,6 +62,7 @@ def clienteForm(self):
     #en esta funcuon debe ir la informacion del cliente pasada por parametros
     Frame = QFrame(self)
     ui = loadUi("app/views/frameDatos.ui",Frame)
+    ui.btn_view.clicked.connect(lambda:infocliente(self))
     return Frame
 
 def cargarClientes(self):
@@ -71,7 +72,9 @@ def cargarClientes(self):
         list_item.setSizeHint(custom_widget.sizeHint())
         self.tw_clientes.addItem(list_item)
         self.tw_clientes.setItemWidget(list_item, custom_widget)
-
+def infocliente(self):
+    dialog = configInfoCliente.infoClientConfig()
+    dialog.exec()
 def registroForm(self):
     dialog = configRegistraClienteForm.registrarClienteFormConfig()
     dialog.exec()

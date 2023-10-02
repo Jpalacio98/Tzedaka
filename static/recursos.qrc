@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="source">
+    <file>cerrar2.png</file>
+    <file>giro.png</file>
+    <file>giro2.png</file>
+    <file>biometrico.png</file>
     <file>anadir_cliente.png</file>
     <file>editar_cliente.png</file>
     <file>eliminar_cliente.png</file>

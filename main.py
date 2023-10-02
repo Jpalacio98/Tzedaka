@@ -11,18 +11,25 @@ class Aplicacion(QMainWindow):
     def __init__(self):
         super().__init__()
         self.InicializarGUI()
+        
 
     def InicializarGUI(self):
         #---------------------declaracion de variables-----------------------
-        configLogin2.loginConfig(self)
+        #configLogin2.login(self)
         #configHome.homeConfig(self)
-        #configWork.workConfig(self)
+        configWork.workConfig(self)
        
+    def  moveWindow(self, e):
+        if e.buttons() == Qt.LeftButton:
+            self.move(self.pos() + e.globalPos() - self.clickPosition)
+            self.clickPosition = e.globalPos()
+            e.accept()
 
-
+    def mousePressEvent(self, event):
+        self.clickPosition = event.globalPos()
+        
     def close(self):
         sys.exit()
-
     def minimizar(self):
         self.showMinimized()
 
@@ -36,14 +43,6 @@ class Aplicacion(QMainWindow):
             self.estado = True
             self.showMaximized()
 
-    def moveWindow(self, e):
-        if e.buttons() == Qt.LeftButton:
-            self.move(self.pos() + e.globalPos() - self.clickPosition)
-            self.clickPosition = e.globalPos()
-            e.accept()
-
-    def mousePressEvent(self, event):
-        self.clickPosition = event.globalPos()
 
 
 

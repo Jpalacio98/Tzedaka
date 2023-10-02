@@ -5,12 +5,20 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.uic import loadUi
+from app.models.Usuario import Usuario
 
 
-def homeConfig(self):
+def homeConfig(self,user):
     self.estado = False
+    self.user = Usuario()
+    self.user.MapeoUsuario(**user[1])
+    print(self.user.nombres)
+    print(self.user.apellidos)
     self.ui=loadUi('app/views/home.ui',self)
     self.setWindowFlags(Qt.FramelessWindowHint)
+    self.setAttribute(Qt.WA_OpaquePaintEvent)
+    self.setStyleSheet("background-color:#ffffff")
+    self.label_2.setText(f"{str(self.user.nombres).split(' ')[0]} {str(self.user.apellidos).split(' ')[0]}")
 
     #-----boton 1---------
     self.btn_Clientes_1= Cbutton1("Clientes","cliente.png")
@@ -38,7 +46,7 @@ def homeConfig(self):
     self.btn_Clientes_5.close()
 
     self.btn_cerrar.clicked.connect(self.close)
-    self.btn_minmax.clicked.connect(self.restablecer)
+    #self.btn_minmax.clicked.connect(self.restablecer)
     self.btn_minimizar.clicked.connect(self.minimizar)
     self.btn_Clientes_1.clicked.connect(self.close)
     self.timer = QTimer()

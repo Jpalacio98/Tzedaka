@@ -207,8 +207,7 @@ class Menubutton(QtWidgets.QPushButton):
         self.setObjectName('item')
         self.setFixedHeight(60)
         self.setFixedWidth(60)
-        
-        
+        self.combo = QtWidgets.QComboBox()
         self.setMouseTracking(True)
 
     def enterEvent(self, event):
