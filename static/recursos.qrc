@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="source">
+    <file>advertencia.png</file>
+    <file>informacion.png</file>
     <file>cerrar2.png</file>
     <file>giro.png</file>
     <file>giro2.png</file>
